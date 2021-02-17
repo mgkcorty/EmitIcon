@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.808.7
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitIcon.Sample.ConsoleApp", "EmitIcon.Sample.ConsoleApp.csproj", "{86297F49-2686-4EC3-9A86-EF19F2DC2FC0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EmitIcon", "..\EmitIcon\EmitIcon.csproj", "{809E2388-57D4-4D57-9B19-11DA6852C61A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{86297F49-2686-4EC3-9A86-EF19F2DC2FC0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{86297F49-2686-4EC3-9A86-EF19F2DC2FC0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{86297F49-2686-4EC3-9A86-EF19F2DC2FC0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{86297F49-2686-4EC3-9A86-EF19F2DC2FC0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{809E2388-57D4-4D57-9B19-11DA6852C61A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{809E2388-57D4-4D57-9B19-11DA6852C61A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{809E2388-57D4-4D57-9B19-11DA6852C61A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{809E2388-57D4-4D57-9B19-11DA6852C61A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {30612A89-CEF0-420A-B5DC-C9A3404A1814}
+	EndGlobalSection
+EndGlobal
