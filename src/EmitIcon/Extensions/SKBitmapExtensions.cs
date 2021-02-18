@@ -22,5 +22,13 @@ namespace System
             skCanvas.Save();
             return bitmap;
         }
+
+        public static byte[] ToByteArray(this SKBitmap bitmap)
+        {
+            var skData = SKImage.FromBitmap(bitmap)
+                .Encode(SKEncodedImageFormat.Png, 100);
+            var data = skData.ToArray();
+            return data;
+        }
     }
 }

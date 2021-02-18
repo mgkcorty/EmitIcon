@@ -7,10 +7,18 @@ namespace EmitIcon.Service
     {
         byte[] GetWindowsIco(byte[] image, float? imageScale = null,
             SKColor? imageMaskColor = null, SKColor? backgroundColor = null,
-            int? cornerRadius = null, List<SKSizeI> resolutions = null);
+            float? cornerRadius = null, List<SKSizeI> resolutions = null);
 
         byte[] PreviewWindowsIco(byte[] image, float? imageScale = null,
             SKColor? imageMaskColor = null, SKColor? backgroundColor = null,
-            int? cornerRadius = null, SKSizeI? size = null);
+            float? cornerRadius = null, SKSizeI? size = null);
+
+        Dictionary<string, byte[]> GetiOSIcon(byte[] image, float? imageScale = null,
+            SKColor? imageMaskColor = null, SKColor? backgroundColor = null,
+            float? cornerRadius = null);
+
+        byte[] PreviewiOSIcon(byte[] image, float? imageScale = null,
+            SKColor? imageMaskColor = null, SKColor? backgroundColor = null,
+            float? cornerRadius = null, SKSizeI? size = null);
     }
 }

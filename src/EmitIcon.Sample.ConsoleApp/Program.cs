@@ -14,11 +14,11 @@ namespace EmitIcon.Sample.ConsoleApp
             var ico = emitIconService.GetWindowsIco(image,
                 imageMaskColor: SKColors.White,
                 backgroundColor: SKColors.BlueViolet,
-                cornerRadius: 70);
+                cornerRadius: 1f);
             var preview = emitIconService.PreviewWindowsIco(image,
                 imageMaskColor: SKColors.White,
                 backgroundColor: SKColors.BlueViolet,
-                cornerRadius: 70,
+                cornerRadius: 1f,
                 size: new SKSizeI(1000, 1000));
             File.WriteAllBytes("icon.ico", ico);
             File.WriteAllBytes("preview.png", preview);

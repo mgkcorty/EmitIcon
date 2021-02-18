@@ -7,10 +7,10 @@ namespace EmitIcon.Service
     {
         byte[] FromData(byte[] image, float? imageScale = null,
             SKColor? imageMaskColor = null, SKColor? backgroundColor = null,
-            int? cornerRadius = null, List<SKSizeI> resolutions = null);
+            float? cornerRadius = null, List<SKSizeI> resolutions = null);
 
         byte[] Preview(byte[] image, float? imageScale = null,
             SKColor? imageMaskColor = null, SKColor? backgroundColor = null,
-            int? cornerRadius = null, SKSizeI? size = null);
+            float? cornerRadius = null, SKSizeI? size = null);
     }
 }

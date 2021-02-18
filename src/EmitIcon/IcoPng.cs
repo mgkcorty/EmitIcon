@@ -44,7 +44,7 @@ namespace EmitIcon
                 uint baseOffset = (uint)(HeaderLength + EntryLength * orderedImages.Length);
                 foreach (var image in orderedImages)
                 {
-                    var buffer = CreateImageBuffer(image);
+                    var buffer = image.ToByteArray();
 
                     uint offset = baseOffset + lengthSum;
 
@@ -105,13 +105,6 @@ namespace EmitIcon
                 return 0;
 
             return (byte)image.Height;
-        }
-
-        private static byte[] CreateImageBuffer(SKBitmap image)
-        {
-            var skData = SKImage.FromBitmap(image).Encode(SKEncodedImageFormat.Png, 100);
-            var data = skData.ToArray();
-            return data;
         }
     }
 }
