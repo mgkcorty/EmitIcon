@@ -14,6 +14,8 @@ namespace EmitIcon
 
         public static SKBitmap SvgToSKBitmap(byte[] svgData, SKSizeI? size = null)
         {
+            if(size != null && (size.Value.Width == 0 || size.Value.Height == 0))
+                return new SKBitmap(0, 0);
             using (var svgStream = new MemoryStream(svgData))
             {
                 var skSvg = size == null ?
