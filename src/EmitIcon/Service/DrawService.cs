@@ -81,18 +81,17 @@ namespace EmitIcon.Service
                 backgroundSize = resolution.Value;
             }
 
-            var scale = imageScale ?? 0.9f;
-            if (scale > 1)
-                scale = 1;
-            if (scale < 0)
-                scale = 0;
+            if (imageScale != null && imageScale > 1)
+                imageScale = 1;
+            if (imageScale != null && imageScale < 0)
+                imageScale = 0;
             if (cornerRadius != null && cornerRadius > 1)
                 cornerRadius = 1;
             if (cornerRadius != null && cornerRadius < 0)
                 cornerRadius = 0;
             var pictureSize = new SKSizeI(
-                (int)(scale * backgroundSize.Width),
-                (int)(scale * backgroundSize.Height));
+                (int)((imageScale ?? 1) * backgroundSize.Width),
+                (int)((imageScale ?? 1) * backgroundSize.Height));
             var result = DrawBitmapIcon(imageData, isSvg,
                 pictureSize, backgroundSize, imageMaskColor,
                 backgroundColor, cornerRadius);
