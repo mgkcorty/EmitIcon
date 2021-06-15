@@ -32,6 +32,7 @@ namespace EmitIcon.Service
             float? imageScale = null, SKColor? imageMaskColor = null,
             SKColor? backgroundColor = null, float? cornerRadius = null)
         {
+            backgroundColor = backgroundColor ?? SKColors.White;
             var result = MobileiOSIconService.FromData(image, imageScale,
                 imageMaskColor, backgroundColor, cornerRadius);
             return result;
