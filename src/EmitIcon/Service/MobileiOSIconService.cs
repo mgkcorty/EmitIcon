@@ -40,6 +40,8 @@ namespace EmitIcon.Service
                 ["iTunesArtwork@2x"] = new SKSizeI(1024, 1024),
 
                 ["Icon-iOSMarketing.png"] = new SKSizeI(1024, 1024),
+                ["Icon-Mac-512.png"] = new SKSizeI(512, 512),
+                ["Icon-Mac-512@2x.png"] = new SKSizeI(1024, 1024),
             };
 
         public Dictionary<string, byte[]> FromData(byte[] imageData,
